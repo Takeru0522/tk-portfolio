@@ -5,98 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Takeru Dev</title>
-    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <!-- Header Showcase -->
-    <header id="showcase" class="grid">
-        <div class="bg-image"></div>
-        <div class="content-wrap">
-            <h1>Welcome to Takeru's Page</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut quas alias dolores magnam tempore id ipsum quasi autem nihil cumque!</p>
-            <a href="#secton-b" class="btn">Read More</a>
+    
+    <header>
+        <div class="header-wrap">
+            <div class="header-left">
+                <p>Takeru Kayamori</p>
+            </div>
+            <div class="header-right">
+                <ul>
+                        <li>About</li>
+                        <li>Projects</li>
+                        <li>Skills</li>
+                        <li>Contact</li>
+                </ul>
+            </div>
         </div>
     </header>
 
+    <div id="showcase">
+        <div class="bg-image"></div>
+        <div class="content-wrap">
+                <h1>Takeru Kayamori</h1>
+                <p>Full Stack Web developer</p>
+                <!-- <a href="#secton-b" class="btn">Read More</a> -->
+        </div>
+    </div>
 
-    <!-- Main -->
-    <main id="main">
-            <h1 class="sample">sample</h1>
-        <!-- Section A -->
-        <section id="section-a" class="grid">
+    <main>
+        <!-- <h1>Body Default デフォルト</h1> -->
+        <section id="section-a">
             <div class="content-wrap">
-                <h2 class="content-title">About Me.</h2>
-                <h1 class="sample">sample</h1>
-                <div class="content-text">
-                    <p>Hello I am Takeru. I'm a front-end developer who studied programming at coding bootcamp in San Francisco.</p>
-                    <p>Studied Economics at Waseda University</p>
-                    <p>My hobbies are tennis and workout.</p>
+                <div>
+                    <h1 class="section-title">About Me</h1>
+                </div>
+                
+                <div class="profile-wrap"> <!-- grid -->
+                    <div class="profile-img-wrap">
+                        <img class="profile-img" src="https://live.staticflickr.com/65535/48611466698_de47a7f1c8_b.jpg" alt="profile">
+                    </div>
+                    
+                    <div class="self-introduction">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, maiores, sapiente illum, sit exercitationem eius tempora vitae aperiam ea vero beatae sequi sed natus itaque ipsam necessitatibus minima quia et.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section B -->
-        <section id="section-b" class="grid">
-            <ul>
-                <li>
-                    <div class="card">
-                        <img src="https://static.pexels.com/photos/574077/pexels-photo-574077.jpeg" alt="">
-                        <div class="card-content">
-                            <h3 class="card-title">Project1</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis similique esse magnam, laboriosam doloremque autem tempora rerum error, quasi accusamus, debitis deleniti ea expedita voluptatibus? Laborum voluptate sed porro similique!</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <img src="https://static.pexels.com/photos/574077/pexels-photo-574077.jpeg" alt="">
-                        <div class="card-content">
-                            <h3 class="card-title">Project2</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis similique esse magnam, laboriosam doloremque autem tempora rerum error, quasi accusamus, debitis deleniti ea expedita voluptatibus? Laborum voluptate sed porro similique!</p>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="card">
-                        <img src="https://static.pexels.com/photos/574077/pexels-photo-574077.jpeg" alt="">
-                        <div class="card-content">
-                            <h3 class="card-title">Project3</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis similique esse magnam, laboriosam doloremque autem tempora rerum error, quasi accusamus, debitis deleniti ea expedita voluptatibus? Laborum voluptate sed porro similique!</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Section C -->
-        <section id="section-c" class="grid">
+        <section id="section-b">
             <div class="content-wrap">
-                <h2 class="content-title">Section C</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nemo alias temporibus cumque at consectetur aliquam facere. Consectetur, nulla dolor.</p>
-                <p>Something to put</p>
+                <div>
+                    <h1 class="section-title">Projects</h1>
+                </div>
+
+                <div class="projects-wrap">
+                    <ul>
+                        <li>
+                            <div class="project">
+                                <h3>Explore</h3>
+                                <a href="https://explore-meetup-clone.herokuapp.com/"><img src="https://live.staticflickr.com/65535/48611788731_cd06d061b2_k.jpg" alt="project"></a>
+                                <p class="project-description">Meetupというコミュニティ運営プラットフォームサービスを真似て、作りました。ユーザーは自分でイベント開催情報を作成し、参加者を募集することができます。自分が開催するイベントや、参加するイベントはユーザーページから確認することができます。</p>
+                                <p>JavaScript / React / MongoDB /  Node / Express </p>
+                                <p class="project-link">
+                                    <a href="https://explore-meetup-clone.herokuapp.com/">Demo</a>/
+                                    <a href="https://git.generalassemb.ly/Takeru/explore">Source Code</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="project">
+                                <h3>Movie Pal</h3>
+                                <a href="https://express-movie-pals.herokuapp.com/reviews/"><img src="https://live.staticflickr.com/65535/48611432698_89ac88fd7e_k.jpg" alt="project"></a>
+                                <p class="project-description">OMDbというオンラインデータベースのAPIを使用した映画レビューアプリケーション。コーディングブートキャンプ中のグループプロジェクトとして作成しました。ユーザーは映画タイトルを検索し、その映画のレビューを「ストーリー・音楽・演技・映像美」の４項目によって評価します。評価した映画はホームページに追加され、４項目の平均点がその映画の点数として表示されます。</p>
+                                <p>JavaScript / React / MongoDB /  Node / Express </p>
+                                <a href="https://express-movie-pals.herokuapp.com/reviews/">Demo</a>/
+                                <a href="https://git.generalassemb.ly/scott-mccormick/moviepals">Source Code</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
+        <section id="section-c">
+            <div class="content-wrap">
+                <div>
+                    <h1 class="section-title">Skills</h1>
+                </div>
 
-        <!-- Section D -->
-        <section id="section-d" class="grid">
-            <div class="box">
-                <h2 class="content-title">Contact Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nemo alias temporibus cumque at consectetur aliquam facere. Consectetur, nulla dolor.</p>
-                <p>contact@gmail.com</p>
-            </div>
-            <div class="box">
-                <h2 class="content-title">Links</h2>
-                <p>GitHub : https://github.com/Takeru0522</p>
-                <p>LinkedIn : https://www.linkedin.com/in/takeru-kayamori/</p>
+                <div class="skills-wrap">
+                    
+                    <img class="skill-img" src="https://live.staticflickr.com/65535/48611905347_a3df4db956_h.jpg" alt="MacBookPro-img-cropped-screen">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore nisi ratione, explicabo cumque error maiores iure minima sint? Quasi, alias esse dolorum amet repellendus dignissimos laborum obcaecati incidunt. Autem, assumenda. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, aperiam accusantium reiciendis illo ad possimus molestiae quos maiores cupiditate id praesentium quaerat architecto quasi fugit laudantium voluptatibus ut ex ea.</p>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer id="main-footer" class="grid">
-        <div>Takeru Kayamori</div>
-        <div>Project By <a href="#">Takeru Kayamori</a></div>
+    <footer>
+
     </footer>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
 </body>
 </html>
