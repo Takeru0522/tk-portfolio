@@ -1,13 +1,22 @@
 /* Core Styles */
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); /* Good */
+
 body {
-    font-family:  "ＭＳ 明朝",serif;
     font-weight: lighter;
+    font-family: 'Montserrat', sans-serif; 
     color: rgb(63, 63, 63);
     margin: 0;
 }
+.japanese {
+    font-family:  "ＭＳ 明朝",serif;
+    /* font-weight: lighter; */
+}
 ul {
     list-style: none;
+}
+a {
+    color: rgb(63, 63, 63);
 }
 
 header {
@@ -30,11 +39,17 @@ header {
 }
 .header-wrap li {
     float: left;
-    text-decoration: none;
-    list-style: none;
+
     margin: 0 1rem;
 }
-
+li a {
+    text-decoration: none;
+    list-style: none;
+    /* color: color: rgb(63, 63, 63); */
+}
+li a:hover {
+    opacity: 0.6;
+}
 .content-wrap {
     padding: 0 4rem 4.5rem;
 }
