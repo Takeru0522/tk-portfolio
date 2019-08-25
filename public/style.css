@@ -12,8 +12,14 @@ ul {
 
 header {
     height: 3rem;
-    border: 1px solid grey;
+    /* border-bottom: 1px solid grey; */
+    box-shadow: 1px 0 8px rgb(211, 211, 211);
     padding: auto 3rem;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    /* opacity: 0.9; */
 }
 
 .header-wrap {
@@ -69,7 +75,7 @@ header {
 
 /* Section-a */
 #section-a {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
 }
 
@@ -90,10 +96,14 @@ header {
 }
 
 .self-introduction {
-    padding: 2rem;
+    padding: 3rem;
     text-align: left;
 }
-.self-introduction p {
+.my-name {
+    font-size: 24px;
+    margin: 0 0 10px 12px;
+}
+.self-intro-main {
     margin: 0;
 }
 
@@ -166,13 +176,16 @@ header {
 }
 .skills-content p {
     font-family: Monaco, "Courier New";
-    margin: 7px;
+    margin-bottom: 5px;
     padding: 0;
 }
 .skills-content {
     text-align: left;
     
     margin: auto;
+}
+.indent {
+    margin-left: 12px;
 }
 .skill-img {
     margin: auto;
@@ -192,7 +205,7 @@ footer {
 }
 .footer-wrap p {
     margin: 3rem auto .5rem;
-    
+    color: white;
 }
 
 
