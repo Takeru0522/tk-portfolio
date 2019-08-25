@@ -91,6 +91,7 @@ header {
 
 .self-introduction {
     padding: 2rem;
+    text-align: left;
 }
 .self-introduction p {
     margin: 0;
@@ -132,6 +133,8 @@ header {
     opacity: 0.6;
     /* width: 320px;
     height: 210px; */
+    /* animation-name: fadeIn;
+    animation-duration: 1s; */
 }
 .project-description {
     text-align: left;
@@ -148,22 +151,50 @@ header {
     height: auto; /* tempo */
 }
 .skills-wrap {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin: 3rem;
+    /* display: grid; */
+    /* grid-template-columns: 100%; */
+    /* margin: 3rem; */
+    background: url("https://live.staticflickr.com/65535/48611905347_a3df4db956_h.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    /* vertical-align: center; */
+}
+.skills-content p {
+    font-family: Monaco, "Courier New";
+    margin: 7px;
+    padding: 0;
+}
+.skills-content {
+    text-align: left;
+    
+    margin: auto;
 }
 .skill-img {
     margin: auto;
     width: 80%;
 }
-.skills-wrap p {
-    padding: 2rem;
-}
+
 
 footer {
-    height: 300px; /* tempo */
+    /* height: 300px; tempo */
     background: #1B5F98; 
+    text-align: center;
 }
+.footer-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.footer-wrap p {
+    margin: 3rem auto .5rem;
+    
+}
+
 
 
 
@@ -172,3 +203,90 @@ footer {
 @media(max-width: 700px) {
 
 }
+
+
+
+
+/* 
+.test {
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+.anime-test:hover {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.anime-sample {
+    animation-name: change-font-size;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.pause-animation {
+    animation-play-state: paused;
+}
+.play-animation {
+    animation-play-state: running;
+}
+
+.why {
+    animation-name: fadeIn;
+}
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@keyframes change-font-size {
+    0% {
+        font-size: 20px;
+    }
+    100% {
+        font-size: 50px;
+    }
+} */
+/* 
+.sample {
+    height: 100%;
+    width: 100%;
+    
+    margin: 0 auto;
+    text-align: center;
+}
+.sample-img {
+    height: 70%;
+    margin: 3rem auto;
+}
+.square {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    
+    width: 100px;
+    height: 100px;
+    
+    border: 2px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+  } */
+
+  .test {
+      font-family: Monaco, "Courier New"
+  }
+  .test2 {
+      font-family: Lato, Ariel, Tahoma, sans-serif;
+  }
+  .test3 {
+    font-family: "Playfair Display", Arial, Tahoma, sans-serif;
+  }
