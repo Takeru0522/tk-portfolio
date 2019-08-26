@@ -222,6 +222,7 @@ footer {
 .footer-wrap p {
     margin: 3rem auto .5rem;
     color: white;
+    /* font-size: 10%; */
 }
 
 
@@ -307,6 +308,9 @@ footer {
     }
     #section-c {
         text-align: center;
+    }
+    footer p {
+        font-size: 10px;
     }
 }
 
