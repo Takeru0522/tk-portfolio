@@ -208,22 +208,24 @@ li a:hover {
     width: 80%;
 }
 
-
-footer {
-    /* height: 300px; tempo */
-    background: #1B5F98; 
-    text-align: center;
-}
-.footer-wrap {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-}
-.footer-wrap p {
-    margin: 3rem auto .5rem;
+/* Section-d */
+#section-d {
+    background: #1B5F98;
     color: white;
-    /* font-size: 10%; */
+    text-align: center;
+    padding-top: 2rem;
+    height: 120px;
 }
+.section-d p {
+    margin: 0 auto;
+}
+/* .section-d-wrap {
+    margin-top: 10rem auto;
+} */
+
+
+
+
 
 
 
@@ -390,50 +392,3 @@ footer {
     border-radius: 100%;
     box-sizing: border-box;
   } */
-
-.test {
-    font-family: Monaco, "Courier New"
-}
-.test2 {
-    font-family: Lato, Ariel, Tahoma, sans-serif;
-}
-.test3 {
-font-family: "Playfair Display", Arial, Tahoma, sans-serif;
-}
-#logo {
-
-}
-
-#log path:nth-child(1) {
-    stroke-dasharray: 3;
-    /* stroke-dasharray: 100; */
-    stroke-dashoffset: 100;
-}
-#log path:nth-child(2) {
-    stroke-dasharray: 10px;
-    stroke-dashoffset: 3px;
-}
-#log path:nth-child(3) {
-    stroke-dasharray: 10px;
-    
-}
-#log path:nth-child(4) {
-    stroke-dasharray: 10px;
-    
-}
-#log path:nth-child(5) {
-    stroke-dasharray: 10px;
-    
-}
-#log path:nth-child(6) {
-    stroke-dasharray: 10px;
-    
-}
-#log path:nth-child(7) {
-    stroke-dasharray: 10px;
-    
-}
-#log path:nth-child(8) {
-    stroke-dasharray: 10px;
-    
-}
