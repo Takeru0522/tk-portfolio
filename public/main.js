@@ -17,7 +17,11 @@ console.log('Hello World');
 // const element =  document.querySelector('.my-element')
 // element.classList.add('animated', 'zoomIn', )
 
+const logo = document.querySelectorAll('#logo path');
 
+for(let i = 0; i < logo.length; i++) {
+    console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
+}
 // function play(){
 //     animeSample.classList.add('play-animation');
 //     animeSample.classList.remove('pause-animation');
