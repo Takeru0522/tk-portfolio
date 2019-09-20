@@ -414,7 +414,7 @@ section {
 	border-right: 300vw solid transparent;
     border-bottom: 400px solid #81C7D4;
     z-index: -1;
-    
+    transition: 1s ease;
 }
 .section-d-bg2 {
     
@@ -425,6 +425,7 @@ section {
 	border-left: 70vw solid transparent;
     border-bottom: 400px solid rgb(151, 151, 151);
     z-index: -1;
+    transition: 1s ease;
 }
 #section-d .section-title {
     margin-bottom: 3rem;
@@ -488,7 +489,9 @@ section {
     text-align: left;
     display: grid;
     grid-template-columns: 50% 50%;
+    transition: 2s ease;
 }
+/* mail icon */
 i.fa {
     /* width: 20px; */
     /* color: #0077b5; */
@@ -499,7 +502,6 @@ i.fa {
 .email {
    margin-left: 17px; 
    font-size: 20px;
-
 }
 
 /* div {
@@ -591,11 +593,15 @@ i.fa {
     }
 }
 @media(max-width: 480px) {
+    header {
+        padding: 10%;
+    }
     .content-wrap {
         padding: 0 10% 10% 10%;
     }
     .section-title {
-        margin-top: 1rem;
+        margin: 3rem auto 1rem;
+        text-align: center;
     }
     .profile-img {
         margin: 1rem 0;
@@ -627,7 +633,74 @@ i.fa {
     #section-c {
         text-align: center;
     }
-    footer p {
+    #section-d {
+        padding-top: 1rem;
+    }
+    .section-d-wrap {
+        /* margin-top: 0rem; */
+        padding-bottom: 0;
+        width: 100%;
+        /* height: 300px; */
+        position: relative;
+        text-align: left;
+        display: flex !important;
+        flex-direction: column !important;
+        
+    }
+    .section-d-bg {
+        width: 100vw;
+        /* overflow: hidden; */
+        position: absolute;
+        /* width: 100%; */
+        height: 0;
+        border-right: 300vw solid #81C7D4;
+        border-bottom: 400px solid #81C7D4;
+        
+        /* background: #81C7D4; */
+        z-index: -1;
+        
+    }
+    .section-d-bg2 {
+        
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: 0;
+        border-left: 0 solid transparent;
+        border-bottom: 400px solid rgb(151, 151, 151);
+        z-index: -1;
+    }
+    .section-d-left {
+        /* margin-top: 3rem; */
+    }
+    .section-d-left h1 {
+        text-align: center;
+    }
+    .links {
+        margin: 0 auto;
+    }
+    .section-d-right {
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        
+    }
+    .email-wrap {
+        margin: 0 auto 2rem;
+
+    }
+    i.fa {
+        /* width: 20px; */
+        /* color: #0077b5; */
+        /* background: white; */
+        font-size: 20px;
+        /* z-index:3; */
+    }
+    .email {
+       margin-left: 17px; 
+       font-size: 14px;
+    }
+    .section-d-right p {
         font-size: 10px;
     }
 }
