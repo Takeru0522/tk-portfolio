@@ -307,52 +307,203 @@ li a:hover {
 
 /* Section-b */
 #section-b {
-    height: auto; /* tempo */
+    height: auto;
     background: rgb(41, 41, 41);
     color: #fff;
 }
-
-
-.projects-wrap ul {
+/* .project-wrap {
+    height: 400px;
+    width: 100%;
     display: grid;
-    grid-template-columns: 50% 50%;
+    border: 1px solid pink;
+    grid-template-columns: 3;
+    position: relative;
+}
+.project {
+    
+    margin: 0 auto;
+    width: 95%;
+    border: 1px solid orange;
+    position: relative;
+    transition: .5s ease;
+}
+.project img {
+    width: 100%;
+}
+
+.project:hover {
+    transform: scale(1.4);
+    z-index: 20;
+    margin: 0 1rem;
+
+}
+.project:not(:hover) {
+    z-index: -2;
+    transform: scale(.8);
+
+
+} */
+
+
+.projects-ul {
+    display: grid;
+    grid-template-columns: 48.5% 48.5%;
+    grid-gap: 3%;
     margin: 0;
     padding: 0;
     text-align: center;
 }
-.project {
-    padding: 2rem;
-}
+
 h3 {
     color: white;
-    margin: 0;
+    margin-bottom: 12px;
     font-size: 24px;
+    text-align: left;
+}
+.project {
+    position: relative;
 }
 .project img {
     display: block;
-    width: 300px;
-    height: 190px;
-    margin: 0 auto;
-    /* border: 1px solid rgb(236, 236, 236); */
+    width: 100%;
+    /* height: 190px; */
+    /* margin: 0 auto; */
     box-shadow: 0 2px 9px black;
 }
-.project img:hover {
-    opacity: 0.6;
-    /* width: 320px;
-    height: 210px; */
-    /* animation-name: fadeIn;
-    animation-duration: 1s; */
+/* .project img:hover {
+    filter: blur(300px);
+} */
+/* .project:hover {
+    filter: brightness(50%);
+} */
+
+.project-on-hover {
+    height: 100%;
+    padding: 1.5rem;
+    /* border: 2px solid pink; */
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(53, 53, 53, .96);
+}
+
+.project-on-hover:hover {
+    /* visibility: visible; */
+    opacity: 1;
+    /* border: 2px solid orange; */
+}
+.on-hover-wrap {
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-rows: 67% 30%;
+    grid-gap: 3%;
+}
+.project-top {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid pink; */
+    display: flex;
+    flex-direction: column;
+
+    /* align-items: flex-end; */
+    justify-content: flex-end;
 }
 .project-description {
     text-align: left;
-    margin: 3rem 0;
+    /* margin: 3rem 0; */
     color: white;
 }
-.project a {
+.project-bottom {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid pink; */
+    width:100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+    /* position: absolute; */
+    /* bottom: 1.5em; */
+    /* padding: 0 10px; */
+}
+.project-bottom-left {
+    
+}
+.project-bottom-left li {
+    /* float: left; */
+}
+
+.project-bottom-left li {
+    float: left;
+}
+
+.project-bottom-left li p {
+    padding: 10px;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 3px;
+}
+
+.js  {
+    border: 1px solid #F0DB4F;
+    color: #F0DB4F
+}
+.react {
+    border: 1px solid #61DAFB;
+    color: #61DAFB !important;
+}
+.node {
+    border: 1px solid #7AB263;
+    color: #7AB263;
+}
+.mongo {
+    border: 1px solid #14944F;
+    color: #14944F;
+}
+.express {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+
+.project-bottom-right {
+    
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /* position: absolute; */
+    /* bottom: 0; */
+}
+.project-bottom-right li {
+    /* float: right; */
+    margin-left: .5rem;
+}
+.project-bottom-right li a {
+    display: inline-block !important;
+    
+    padding: 10px;
+    border-radius: 15px;
     color: white;
     text-decoration: none;
-    margin: 0 5px;
 }
+.heroku {
+    background: rgb(79, 59, 149);
+    border: 2px solid rgb(68, 51, 131);
+    
+}
+.git {
+    background: rgb(41, 41, 41);
+    border: 2px solid rgb(66, 66, 66);
+    
+}
+/*  */
+
+
+
 
 /* Section-c */
 #section-c {
@@ -594,7 +745,6 @@ i.fa {
 }
 @media(max-width: 480px) {
     header {
-        padding: 10%;
     }
     .content-wrap {
         padding: 0 10% 10% 10%;
