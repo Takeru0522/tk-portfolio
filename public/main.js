@@ -35,16 +35,19 @@ const nav4 = document.getElementById("nav-4"); // Skill
 const nav5 = document.getElementById("nav-5"); // Contact
 
 // const header = document.getElementById("header");
-const header = document.querySelector('header')
+const nav = document.getElementById('nav');
 const sectionA = document.getElementById("section-a"); // About
-const sectionB = document.getElementById("section-b");
-const sectionC = document.getElementById("section-c");
+const sectionA = document.getElementById("section-z"); // History
+const sectionB = document.getElementById("section-b"); // Hobby
+const sectionC = document.getElementById("section-c"); // Contact
 const sectionD = document.getElementById("section-d");
 
+console.log(nav.offsetTop)
 
 nav1.addEventListener('click', () => {
-    
-    sectionA.scrollIntoView({
+    console.log('clicked')
+
+    nav.scrollIntoView({
         behavior: "smooth", 
         block: "start", 
         inline: "nearest"
